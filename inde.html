@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR Code Generator</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="icon" href="assets/images/favicon.png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="assets/js/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header  -->
     <header>
-        <h2>QR CODE GENERATOR</h2>
+      <h2>QR CODE GENERATOR</h2>
     </header>
     <main>
-        <div class="image">
-            <img src="assets/images/qr.gif" alt="image">
-        </div>
-        <div class="content">
-            <h2>QR Code Generator</h2>
-            <p>QR Codes allow smartphone user to access your website simply and quickly</p>
-            <p>Enter you URL below to generate a QR Code and download the image.</p>
-            <form action="" id="form">
-                <input type="url" id="url" placeholder="Enter a URL" class="inputUrl">
-                <select name="imageSize" id="size" class="selected">
-                    <option value="100">100x100</option>
-                    <option value="200">200x200</option>
-                    <option value="300">300x300</option>
-                    <option value="400">400x400</option>
-                    <option value="500">500x500</option>
-                    <option value="600">600x600</option>
-                    <option value="700">700x700</option>
-                </select>
-                <button class="submit" type="submit">Generate QR Code</button>
-            </form>
-        </div>
+      <div class="image">
+        <img src="assets/images/qr.gif" alt="image" />
+      </div>
+      <div class="content">
+        <h2>QR Code Generator</h2>
+        <p>
+          QR Codes allow smartphone user to access your website simply and
+          quickly
+        </p>
+        <p>Enter you URL below to generate a QR Code and download the image.</p>
+        <form action="" id="form">
+          <input
+            type="url"
+            id="url"
+            placeholder="Enter a URL"
+            class="inputUrl"
+          />
+          <select name="imageSize" id="size" class="selected">
+            <option value="100">100x100</option>
+            <option value="200">200x200</option>
+            <option value="300">300x300</option>
+            <option value="400">400x400</option>
+            <option value="500">500x500</option>
+            <option value="600">600x600</option>
+          </select>
+          <button class="submit" type="submit">Generate QR Code</button>
+        </form>
+      </div>
     </main>
 
     <div class="generated" id="generated">
-        <!-- spinner  -->
-        <div class="loader" id="spinner"></div>
-        <!-- qr code img append  -->
-        <div id="qrCode"></div>
+      <!-- spinner  -->
+      <div class="loader" id="spinner"></div>
+      <!-- qr code img append  -->
+      <div id="qrCode"></div>
     </div>
-</body>
+
+    <!-- <footer>
+      <small>developed by shihan</small>
+    </footer> -->
+  </body>
 </html>

@@ -1,119 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-header{
-    max-width: 100%;
-    margin-inline: auto;
-    background-color: #ffcd00;
-    font-weight: 600;
-    padding: 5px 50px;
+header {
+  max-width: 100%;
+  margin-inline: auto;
+  box-sizing: border-box;
+  background-color: #ffcd00;
+  font-weight: 600;
+  padding: 5px 50px;
 }
 
-main{
-    max-width: 1200px;
-    margin: 20px auto;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: center;
 }
 
-img{
-    /* width: 100%; */
+img {
+  /* width: 100%; */
 }
 
-.content{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2rem 3rem;
-    text-align: left;
-    color: #505252;
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 3rem;
+  text-align: left;
+  color: #505252;
 }
 
-#form{
-    display: flex !important;
-    flex-direction: column;
-    gap: 0.8rem;
+#form {
+  display: flex !important;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
-.inputUrl{
-    border: 2px solid #5052525d;
-    padding: 10px;
-    border-radius: 0.2rem;
+.inputUrl {
+  border: 2px solid #5052525d;
+  padding: 10px;
+  border-radius: 0.2rem;
 }
 
-.selected{
-    border: 2px solid #5052525d;
-    padding: 10px;
-    border-radius: 0.2rem;
+.selected {
+  border: 2px solid #5052525d;
+  padding: 10px;
+  border-radius: 0.2rem;
 }
 
-.selected > option:hover{
-    background: #ffcd00 !important;
+.selected > option:hover {
+  background: #ffcd00 !important;
 }
 
-.submit{
-    padding: 10px;
-    border-radius: 0.2rem;
-    font-size: 1rem;
-    border: 2px solid #505252;
-    background-color: #ffcd00;
-    font-weight: 600;
+.submit {
+  padding: 10px;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  border: 2px solid #505252;
+  background-color: #ffcd00;
+  font-weight: 600;
 }
 
 /* spinner  */
-.loader{
-    margin: 10px auto;
-    border: 1rem solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 1rem solid #ffcd00;
-    width: 3rem;
-    height: 3rem;
+.loader {
+  margin: 10px auto;
+  border: 1rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 1rem solid #ffcd00;
+  width: 3rem;
+  height: 3rem;
 
-    /* safari  */
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+  /* safari  */
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
-.download-btn{
-    display: block;
-    width: 20%;
-    text-align: center;
-    background-color: #d42c02;
-    margin: 20px auto;
-    border-radius: 5px;
-    padding: 10px 30px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+.downloadBtn {
+  display: block;
+  width: 20%;
+  text-align: center;
+  background-color: #ffcd00;
+  margin: 60px auto;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-
-    100%{
-        transform: rotate(360eg);
-    }
+/* footer {
+  width: 100%;
+  height: 50px;
+  background: #ffcd00;
+  text-align: center;
+  margin: auto;
+  bottom: 0;
+  position: relative;
 }
 
-#qrCode{
-    margin: auto;
-    max-width: 1200px;
-    width: max-content;
+small {
+  margin: auto;
+  text-align: center;
+  top: 15px;
+  position: relative;
+} */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
+#qrCode {
+  margin: auto;
+  max-width: 1200px;
+  width: max-content;
+}
 
 /* responsive design  */
 @media screen and (max-width: 600px) {
-    main {
-        flex-direction: column;
-    }
+  main {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 80%;
+  }
 }
